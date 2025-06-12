@@ -1,14 +1,14 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Taiki Hika - Essential Japanese Phrases for Travelers',
+  title: 'Taiki Hika - Japan WorkCulture Wizard - Essential Japanese Phrases for travelling and bussiness',
   description: 'Master essential Japanese phrases for your trip to Japan. Learn pronunciation, context, and cultural tips with Taiki Hika.',
   keywords: 'Japanese phrases, travel Japan, learn Japanese, tourist phrases, Japan travel guide',
   openGraph: {
-    title: 'Taiki Hika - Essential Japanese Phrases',
+    title: 'Taiki Hika - Japan WorkCulture Wizard - Essential Japanese Phrases for travelling and bussiness',
     description: 'Your companion for learning essential Japanese phrases',
     url: 'https://taikihika.vercel.app',
-    siteName: 'Taiki Hika',
+    siteName: 'Taiki Hika - Japan WorkCulture Wizard',
     images: [
       {
         url: '/og-image.png',
@@ -21,7 +21,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Taiki Hika - Essential Japanese Phrases',
+    title: 'Taiki Hika - Japan WorkCulture Wizard - Essential Japanese Phrases',
     description: 'Master essential Japanese phrases for your trip to Japan',
     images: ['/og-image.png'],
   },
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
+              gtag('config', 'G-HX8VRMBP3T');
             `,
           }}
         />

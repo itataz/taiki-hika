@@ -33,18 +33,18 @@ const TaikiHika = () => {
   // Google Analytics トラッキング
   useEffect(() => {
     // ページタイトル設定
-    document.title = 'Taiki Hika - Essential Japanese Phrases for Travelers';
+    document.title = 'Japan Work Culture Wizard - Essential Japanese Phrases for Travelers';
     
     // メタタグ設定
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.content = 'Master essential Japanese phrases for your trip to Japan. Learn pronunciation, context, and cultural tips with Taiki Hika.';
+      metaDescription.content = 'Master essential Japanese phrases for your trip to Japan. Learn pronunciation, context, and cultural tips with Japan Work Culture Wizard.';
     }
     
     // Google Analytics 4の設定
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'page_view', {
-        page_title: 'Taiki Hika Home',
+        page_title: 'Japan Work Culture Wizard Home',
         page_location: window.location.href
       });
     }
@@ -598,8 +598,8 @@ const TaikiHika = () => {
         <div className="max-w-lg mx-auto px-4 py-6">
           <div className="flex justify-between items-center mb-4">
             <div>
-              <h1 className="text-2xl font-bold flex items-center gap-2">
-                ✨ Taiki Hika
+              <h1 className="text-xl md:text-2xl font-bold">
+                ✨ Japan Work Culture Wizard
               </h1>
               <p className="text-sm text-white/80">Essential Japanese Phrases</p>
             </div>
@@ -917,7 +917,7 @@ const TaikiHika = () => {
             {/* Buy Me a Coffee セクション */}
             <div className="mt-8 text-center">
               <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-6 border border-purple-200">
-                <p className="text-lg font-semibold mb-2">✨ Enjoying Taiki Hika?</p>
+                <p className="text-lg font-semibold mb-2">✨ Enjoying Japan Work Culture Wizard?</p>
                 <p className="text-gray-700 mb-4">Support us to expand our phrase collection!</p>
                 <a 
                   href="https://www.buymeacoffee.com/taikihika"
@@ -925,7 +925,7 @@ const TaikiHika = () => {
                   rel="noopener noreferrer"
                   className="inline-block bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-xl transition-all transform hover:scale-105"
                 >
-                  Support Taiki Hika ☕
+                  Support This Project ☕
                 </a>
               </div>
             </div>
@@ -933,7 +933,7 @@ const TaikiHika = () => {
             {/* フッター */}
             <div className="mt-12 pb-8 text-center">
               <p className="text-sm text-gray-600 mb-2">
-                Made with ✨ by Taiki Hika Phrases
+                Made with ✨ by Japan Work Culture Wizard
               </p>
               <p className="text-xs text-gray-500">
                 Empowering travelers to connect with Japan through language
