@@ -643,6 +643,15 @@ const TaikiHika = () => {
               <Target className="w-5 h-5 text-blue-500" />
               <span>Daily Challenge</span>
             </button>
+            <a 
+              href="https://www.amazon.com/stores/Taiki-Hika-Sensei/author/B09MHR6665"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-left px-4 py-3 hover:bg-gray-50 rounded-lg flex items-center gap-3 block"
+            >
+              <span className="text-lg">📚</span>
+              <span>Books by Author</span>
+            </a>
             <button className="w-full text-left px-4 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-lg flex items-center justify-between">
               <span className="flex items-center gap-3">
                 <Star className="w-5 h-5" />
@@ -914,6 +923,51 @@ const TaikiHika = () => {
               </p>
             </div>
 
+            {/* Author Section - 本の紹介 */}
+            <div className="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
+              <h3 className="text-lg font-bold mb-3 text-gray-800">📚 Learn More with Our Books</h3>
+              <p className="text-gray-700 mb-4">
+                Dive deeper into Japanese language and culture with books by Taiki Hika Sensei
+              </p>
+              <div className="space-y-3">
+                <a 
+                  href="https://www.amazon.com/stores/Taiki-Hika-Sensei/author/B09MHR6665"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-white rounded-lg p-3 hover:shadow-md transition-shadow border border-gray-200"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-semibold text-gray-800">📖 Browse All Books on Amazon</p>
+                      <p className="text-sm text-gray-600">Japanese learning guides & cultural insights</p>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-gray-400" />
+                  </div>
+                </a>
+                
+                {/* 特定の本を紹介する場合はここに追加 */}
+                {/*
+                <a 
+                  href="YOUR_SPECIFIC_BOOK_URL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-white rounded-lg p-3 hover:shadow-md transition-shadow border border-gray-200"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-semibold text-gray-800">🌸 [Book Title]</p>
+                      <p className="text-sm text-gray-600">[Book Description]</p>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-gray-400" />
+                  </div>
+                </a>
+                */}
+              </div>
+              <p className="text-xs text-gray-500 mt-3 italic">
+                "From digital to print - your complete Japanese learning journey"
+              </p>
+            </div>
+
             {/* Buy Me a Coffee セクション */}
             <div className="mt-8 text-center">
               <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-6 border border-purple-200">
@@ -940,8 +994,16 @@ const TaikiHika = () => {
               <p className="text-sm text-gray-600 mb-2">
                 Made with ✨ by Japan Work Culture Wizard
               </p>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-gray-500 mb-3">
                 Empowering travelers to connect with Japan through language
+              </p>
+              <p className="text-xs text-gray-400">
+                Created by <a href="https://www.amazon.com/stores/Taiki-Hika-Sensei/author/B09MHR6665" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-purple-600 hover:text-purple-700 underline">
+                  Taiki Hika Sensei
+                </a> • Author & Japanese Culture Expert
               </p>
             </div>
           </>
