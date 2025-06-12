@@ -1,6 +1,4 @@
-
-
-javascript'use client';
+'use client';
 
 import TaikiHika from '../components/TaikiHika';
 
