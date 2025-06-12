@@ -19,7 +19,7 @@ const TaikiHika = () => {
 
   // ローカルストレージから進捗を読み込み
   useEffect(() => {
-    const savedProgress = localStorage.getItem('taikiHikaProgress');
+    const savedProgress = localStorage.getItem('japanWizardProgress');
     if (savedProgress) {
       setUserProgress(JSON.parse(savedProgress));
     }
@@ -27,7 +27,7 @@ const TaikiHika = () => {
 
   // 進捗が更新されたらローカルストレージに保存
   useEffect(() => {
-    localStorage.setItem('taikiHikaProgress', JSON.stringify(userProgress));
+    localStorage.setItem('japanWizardProgress', JSON.stringify(userProgress));
   }, [userProgress]);
 
   // Google Analytics トラッキング
@@ -917,16 +917,21 @@ const TaikiHika = () => {
             {/* Buy Me a Coffee セクション */}
             <div className="mt-8 text-center">
               <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-6 border border-purple-200">
-                <p className="text-lg font-semibold mb-2">✨ Enjoying Japan Work Culture Wizard?</p>
-                <p className="text-gray-700 mb-4">Support us to expand our phrase collection!</p>
+                <p className="text-lg font-semibold mb-2">☕ Love Japan Work Culture Wizard?</p>
+                <p className="text-gray-700 mb-4">Your support helps us add more phrases and improve the app!</p>
                 <a 
-                  href="https://www.buymeacoffee.com/taikihika"
+                  href="https://buymeacoffee.com/taikihika"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-semibold px-6 py-3 rounded-xl transition-all transform hover:scale-105"
+                  className="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-500 hover:to-amber-600 text-gray-800 font-semibold px-8 py-4 rounded-xl transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
-                  Support This Project ☕
+                  <span className="flex items-center gap-2">
+                    ☕ Buy Me a Coffee
+                  </span>
                 </a>
+                <p className="text-xs text-gray-500 mt-3">
+                  Every coffee helps us create better content for Japanese learners!
+                </p>
               </div>
             </div>
 
